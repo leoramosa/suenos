@@ -87,8 +87,15 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.day-event-content img:nth-child(1) {
+  width: 70%;
+}
 .day-event-content img:nth-child(2) {
-  width: 50%;
+  width: 70%;
+  padding-bottom: 15px;
+}
+.day-event-content img:nth-child(3) {
+  width: 70%;
 }
 
 .text-evento {
@@ -3619,24 +3626,6 @@ body > .jcf-select-drop.jcf-drop-flipped {
   background-position: 50% 50%;
 }
 
-.theme_dark .black-theme-dark .btn-light:hover,
-.theme_dark .black-theme-dark .btn-light:focus,
-.theme_dark .black-theme-dark .btn-light:active,
-.theme_dark .black-theme-dark .btn-outline-light:hover,
-.theme_dark .black-theme-dark .btn-outline-light:focus,
-.theme_dark .black-theme-dark .btn-outline-light:active,
-.theme_dark .black-theme-dark .btn-outline-info:hover,
-.theme_dark .black-theme-dark .btn-outline-info:focus,
-.theme_dark .black-theme-dark .btn-outline-info:active,
-.theme_dark .black-theme-dark .jcf-select.jcf-select-info-style:hover,
-.theme_dark .black-theme-dark .jcf-select.jcf-select-info-style:focus,
-.theme_dark .black-theme-dark .jcf-select.jcf-select-info-style:active {
-  background-image: -webkit-linear-gradient(192deg, #2e42b2 0%, #2b2f8e 100%);
-  background-image: linear-gradient(258deg, #2e42b2 0%, #2b2f8e 100%);
-  background-color: transparent;
-  border-color: transparent;
-}
-
 .theme_dark .black-theme-dark .btn.disabled,
 .theme_dark .black-theme-dark .btn[disabled] {
   background-color: #2d2d2d;
@@ -5357,6 +5346,9 @@ body > .jcf-select-drop.jcf-drop-flipped {
   }
 }
 @media only screen and (max-width: 576px) {
+  .day-event-content img:nth-child(3) {
+    width: 100%;
+  }
   .img-art {
     margin-bottom: -25px;
   }
