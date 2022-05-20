@@ -25,13 +25,33 @@
 }
 
 /* new style 2022 */
-.sub-content-evento {
-  text-align: center;
-}
 .content-evento {
   background: url("../images/sub-fondo.jpg") center center no-repeat;
   background-size: cover;
   background-position: top;
+}
+.sub-content-evento {
+  text-align: center;
+  background: url("../images/fondo_nuevo.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.content-evento.respon {
+  background: url("../images/res-1200-two.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.sub-content-evento.respon {
+  text-align: center;
+  background: url("../images/res-1200.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.evento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-title {
@@ -43,15 +63,6 @@
   padding-top: 30px;
   width: 700px;
   margin-bottom: -40px;
-}
-
-.evento {
-  background: url("../images/fondo_nuevo.jpg") center center no-repeat;
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .price-section {
@@ -162,7 +173,7 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(2);
   }
 }
 /* new style 2022 */
@@ -1567,31 +1578,35 @@ table td {
 }
 
 .badge.badge-lila {
-  background-color: #cb4cff;
+  background-color: #37c8ab;
 }
 
 .badge.badge-morado {
-  background-color: #6a00b4;
+  background-color: #ff6600;
 }
 
 .badge.badge-naranja {
-  background-color: #ff8a00;
+  background-color: #ff00bd;
 }
 
 .badge.badge-ladrillo {
-  background-color: #ed4c00;
+  background-color: #ff00bd;
 }
 
 .badge.badge-rojo {
-  background-color: #ff4936;
+  background-color: #37c8ab;
 }
 
 .badge.badge-verde {
-  background-color: #65ff00;
+  background-color: #37c837;
 }
 
 .badge.badge-verde-oscuro {
-  background-color: #02d700;
+  background-color: #ffcc00;
+}
+.badge.badge-disca {
+  background-color: #130b82;
+  border: 1px solid white;
 }
 
 .badge.badge-fucsia {
@@ -5252,6 +5267,17 @@ body > .jcf-select-drop.jcf-drop-flipped {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .content-evento.respon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .content-evento.desktop {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .nav-opener.info-info {
     display: none;
@@ -5286,6 +5312,9 @@ body > .jcf-select-drop.jcf-drop-flipped {
   }
 }
 @media only screen and (max-width: 768px) {
+  .blessd {
+    width: 100%;
+  }
   .subscribe-form {
     padding-bottom: 80px;
   }
@@ -5328,6 +5357,15 @@ body > .jcf-select-drop.jcf-drop-flipped {
   }
 }
 @media only screen and (max-width: 576px) {
+  .img-art {
+    margin-bottom: -25px;
+  }
+  .text-evento {
+    font-size: 20px;
+  }
+  .img_mapa {
+    width: 100%;
+  }
   .subscribe-form {
     padding-bottom: 20px;
   }
